@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preferencias</title>
+</head>
+<body>
+
+    <h2>Formulario 3</h2>
+
+    <form action="/procesar_formulario" method="post">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br>
+
+        <!-- Campo para el correo electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <br>
+
+        <!-- Casillas de verificación para las preferencias -->
+        <label>Preferencias:</label>
+        <br>
+        <input type="checkbox" id="gusto1" name="preferencias[]" value="Musica">
+        <label for="gusto1">Deporte</label>
+
+        <br>
+
+        <input type="checkbox" id="gusto2" name="preferencias[]" value="Deportes">
+        <label for="gusto2">Entretenimiento</label>
+
+        <br>
+
+        <input type="checkbox" id="gusto3" name="preferencias[]" value="Viajes">
+        <label for="gusto3">Automoción</label>
+
+        <br>
+
+        <!-- Agrega más casillas de verificación según sea necesario -->
+
+        <br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
